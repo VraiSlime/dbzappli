@@ -36,7 +36,7 @@ const TabNavigation = () => {
             options={{
                 tabBarLabel: 'Accueil',
                 tabBarIcon: ({color, size}) => (
-                    <Icon name="search" color={color} size={size} />
+                    <Icon name="magnify" color={color} size={size} />
                 )
             }}
             />
