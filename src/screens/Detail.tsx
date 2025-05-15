@@ -7,6 +7,7 @@ import {AppDispatch, RootState} from '../store/store';
 import {fetchCharacterDetail} from '../store/characters/characterSlice';
 import Loading from '../components/ui/Loading';
 import DetailHeader from '../components/detail/DetailHeader';
+import DetailStat from '../components/detail/DetailStat';
 
 type DetailScreenRouteProp = RouteProp<RootStackParamList, 'Detail'>;
 
@@ -43,6 +44,9 @@ const Detail = () => {
   return (
     <ScrollView style={styles.container}>
       <DetailHeader character={characterDetail} />
+      <View style={styles.content}>
+    <DetailStat character={characterDetail}/>
+      </View>
     </ScrollView>
   );
 };
@@ -63,6 +67,9 @@ const styles = StyleSheet.create({
   container: {
     flex:1,
     backgroundColor: '#FFF',
+  },
+  content : {
+    padding: 16,
   }
 });
 
