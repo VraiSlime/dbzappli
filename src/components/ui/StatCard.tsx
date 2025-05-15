@@ -21,7 +21,7 @@ const StatCard:React.FC<StatCardProps> = ({label, value}) => {
 
 const styles = StyleSheet.create({
     statCard : {
-        width: (width - 48) / 2,
+        width: (width - 49) / 2,
         backgroundColor: '#F8F8F8',
         padding: 16,
         borderRadius: 12,
